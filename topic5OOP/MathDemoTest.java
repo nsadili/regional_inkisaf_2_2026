@@ -1,3 +1,5 @@
+package topic5OOP;
+
 import java.util.Arrays;
 
 public class MathDemoTest {
@@ -5,8 +7,10 @@ public class MathDemoTest {
 
         // var mathDemo = new MathDemo();
 
-        System.out.println(MathDemo.max(3, 5));
-        System.out.println(MathDemo.sum(new int[] { 2, 3, 5, 2, 6 }));
+        // System.out.println(MathDemo.min(3, 5));
+        System.out.println(MathDemo.min(3, 5, -2));
+
+        // System.out.println(MathDemo.sum(new double[] { 2.71, 3.14, 5, 2, 6 }));
 
 
     }
