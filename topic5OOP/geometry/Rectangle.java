@@ -24,11 +24,11 @@ public class Rectangle extends Shape {
         this("rect", color, false, width, length);
     }
 
-    public int getArea() {
+    public double getArea() {
         return width * length;
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
         return 2 * (width + length);
     }
 

@@ -1,4 +1,9 @@
-public class Segment {
+package topic3OOP;
+
+import topic3OOP.Point;
+import topic5OOP.geometry.Movable;
+
+public class Segment implements Movable{
     private Point p1;
     private Point p2;
 
@@ -50,4 +55,24 @@ public class Segment {
                 + ", p2: " + p2.toString()
                 + ")";
     }
+
+    public void moveUp(double step) {
+        this.p1.moveUp(step);
+        this.p2.moveUp(step);
+    };
+
+    public void moveDown(double step) {
+        this.p1.moveDown(step);
+        this.p2.moveDown(step);
+    };
+
+    public void moveRight(double step) {
+        this.p1.moveRight(step);
+        this.p2.moveRight(step);
+    };
+
+    public void moveLeft(double step) {
+        this.p1.moveLeft(step);
+        this.p2.moveLeft(step);
+    };
 }

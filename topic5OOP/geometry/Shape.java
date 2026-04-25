@@ -1,6 +1,6 @@
 package topic5OOP.geometry;
 
-public class Shape {
+public abstract class Shape {
     private String name;
     private String color;
     private boolean isFilled;
@@ -39,5 +39,9 @@ public class Shape {
     public String toString() {
         return "Shape [name=" + name + ", color=" + color + ", isFilled=" + isFilled + "]";
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 
 }

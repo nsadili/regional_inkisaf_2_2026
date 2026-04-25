@@ -1,4 +1,8 @@
-public class Point {
+package topic3OOP;
+
+import topic5OOP.geometry.Movable;
+
+public class Point implements Movable {
 
     // FIELDS
     private float x;
@@ -67,8 +71,24 @@ public class Point {
         boolean res = this.x == anotherP.x && this.y == anotherP.y;
         return res;
         // if (res)
-        //     return true;
+        // return true;
         // else
-        //     return false;
+        // return false;
     }
+
+    public void moveUp(double step) {
+        this.translate(0.0f, (float) Math.abs(step));
+    };
+
+    public void moveDown(double step) {
+        this.translate(0.0f, -(float) Math.abs(step));
+    };
+
+    public void moveRight(double step) {
+        this.translate((float) Math.abs(step), 0.0f);
+    };
+
+    public void moveLeft(double step) {
+        this.translate(-(float) Math.abs(step), 0.0f);
+    };
 }
