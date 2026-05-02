@@ -1,3 +1,5 @@
+package topic3OOP;
+
 import java.util.Scanner;
 
 public class MainGeo {
